@@ -183,11 +183,10 @@ management_group_settings = {
     */
   }
   subscription_placement = {
-    # Uncomment the identity block below when you have a dedicated identity subscription
-    # identity = {
-    #   subscription_id       = "$${subscription_id_identity}"
-    #   management_group_name = "identity"
-    # }
+    identity = {
+      subscription_id       = "$${subscription_id_identity}"
+      management_group_name = "identity"
+    }
     connectivity = {
       subscription_id       = "$${subscription_id_connectivity}"
       management_group_name = "connectivity"
@@ -196,11 +195,10 @@ management_group_settings = {
       subscription_id       = "$${subscription_id_management}"
       management_group_name = "management"
     }
-    # Uncomment the security block below when you have a dedicated security subscription
-    # security = {
-    #   subscription_id       = "$${subscription_id_security}"
-    #   management_group_name = "security"
-    # }
+    security = {
+      subscription_id       = "$${subscription_id_security}"
+      management_group_name = "security"
+    }
   }
   policy_assignments_to_modify = {
     alz = {
