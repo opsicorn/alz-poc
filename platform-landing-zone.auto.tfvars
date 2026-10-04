@@ -49,14 +49,14 @@ custom_replacements = {
     ddos_protection_plan_enabled = false
 
     # Resource provisioning primary connectivity
-    primary_firewall_enabled                              = true
+    primary_firewall_enabled                              = false
     primary_firewall_sku_tier                             = "Basic"
     primary_virtual_network_gateway_express_route_enabled = false
     primary_virtual_network_gateway_vpn_enabled           = false
     primary_private_dns_zones_enabled                     = false
     primary_private_dns_auto_registration_zone_enabled    = false
     primary_private_dns_resolver_enabled                  = false
-    primary_bastion_enabled                               = false
+    primary_bastion_enabled                               = true
 
     # Resource group names
     management_resource_group_name               = "rg-management-$${starter_location_01}"
