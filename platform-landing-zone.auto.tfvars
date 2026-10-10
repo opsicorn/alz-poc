@@ -310,6 +310,20 @@ hub_virtual_networks = {
       private_dns_zones                     = "$${primary_private_dns_zones_enabled}"
       private_dns_resolver                  = "$${primary_private_dns_resolver_enabled}"
     }
+    virtual_network_gateways = {
+      vpn = {
+        sku = "VpnGw1"
+
+        vpn_point_to_site = {
+          address_space        = ["172.20.0.0/24"]
+          vpn_client_protocols = ["OpenVPN"]
+          vpn_auth_types       = ["AAD"]
+
+          aad_tenant   = "https://login.microsoftonline.com/23340422-78f4-4274-8507-632a003af2e5"
+          aad_audience = "41b23e61-6c1e-4545-b367-cd054e0ed4b4"
+          aad_issuer   = "https://sts.windows.net/23340422-78f4-4274-8507-632a003af2e5/"
+        }
+    }
     firewall = {
       sku_tier = "$${primary_firewall_sku_tier}"
     }
