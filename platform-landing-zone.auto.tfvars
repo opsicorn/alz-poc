@@ -323,6 +323,7 @@ hub_virtual_networks = {
           aad_audience = "41b23e61-6c1e-4545-b367-cd054e0ed4b4"
           aad_issuer   = "https://sts.windows.net/23340422-78f4-4274-8507-632a003af2e5/"
         }
+      }
     }
     firewall = {
       sku_tier = "$${primary_firewall_sku_tier}"
