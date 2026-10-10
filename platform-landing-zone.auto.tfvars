@@ -312,7 +312,7 @@ hub_virtual_networks = {
     }
     virtual_network_gateways = {
       vpn = {
-        sku = "VpnGw1"
+        sku = "VpnGw1AZ"
 
         vpn_point_to_site = {
           address_space        = ["172.20.0.0/24"]
